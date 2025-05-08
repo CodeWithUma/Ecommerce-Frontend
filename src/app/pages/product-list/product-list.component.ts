@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
   selector: 'app-product-list',
   imports: [CommonModule, HttpClientModule],
   templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.scss'
+  styleUrls: ['./product-list.component.scss']  
 })
 
 // This class defines an Angular component that implements OnInit lifecycle hook

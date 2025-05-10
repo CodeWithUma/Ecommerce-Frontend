@@ -14,7 +14,7 @@ export class LoginComponent {
   password = '';
 
   login() {
-    console.log('Login with', this.email, this.password);
+    console.log('Login attempt initiated.');
     // Call AuthService login method here
   }
 }

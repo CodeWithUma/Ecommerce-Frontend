@@ -22,5 +22,12 @@ export const routes: Routes = [
       import('./pages/signup/signup.component').then(
         (m) => m.SignupComponent
       )
-  }
+  },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./pages/page-not-found/page-not-found.component').then(
+        (m) => m.PageNotFoundComponent
+      ),
+  },
 ];

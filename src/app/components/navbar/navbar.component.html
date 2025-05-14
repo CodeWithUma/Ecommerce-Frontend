@@ -1,10 +1,10 @@
 <nav class="bg-blue-600 text-white p-4 shadow-md flex justify-between items-center">
-    <a class="text-xl font-bold" routerLink="/">MyShop</a>
-
+    <a class="text-xl font-bold cursor-pointer" routerLink="/">MyShop</a>
     <ul class="flex gap-4">
-        <li><a routerLink="/" routerLinkActive="font-semibold">Home</a></li>
-        <li><a routerLink="/products" routerLinkActive="font-semibold">Products</a></li>
-        <li><a routerLink="/cart" routerLinkActive="font-semibold">Cart</a></li>
-        <li><a routerLink="/login" routerLinkActive="font-semibold">Login</a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="font-semibold" class="cursor-pointer">Home</a></li>
+        <li><a [routerLink]="['/products']" routerLinkActive="font-semibold" class="cursor-pointer">Products</a></li>
+        <li><a [routerLink]="['/cart']" routerLinkActive="font-semibold" class="cursor-pointer">Cart</a></li>
+        <li><a [routerLink]="['/login']" routerLinkActive="font-semibold" class="cursor-pointer">Login</a></li>
+        <li><a [routerLink]="['/signup']" routerLinkActive="font-semibold" class="cursor-pointer">SignUp</a></li>
     </ul>
 </nav>

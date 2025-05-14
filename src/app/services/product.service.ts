@@ -17,7 +17,7 @@ export class ProductService {
   // This method returns an Observable that emits an array of Product objects.
   // It performs an HTTP GET request to fetch product data from the given JSON file.
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>('/mock-products.json');
+    return this.http.get<Product[]>('https://fakestoreapi.com/products');
   }
 }
 

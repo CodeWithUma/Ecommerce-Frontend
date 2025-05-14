@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-list',
+  standalone: true,
   imports: [CommonModule, HttpClientModule],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.scss']  
